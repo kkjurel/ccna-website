@@ -1,0 +1,6 @@
+{
+  "name": "CCNA Zero to Hero",
+  "description": "Learn Cisco CCNA 200-301 with interactive simulators, labs, flashcards, and step-by-step roadmaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
