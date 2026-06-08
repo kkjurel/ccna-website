@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Menu, X, ChevronDown, CheckCircle, ArrowRight, BookOpen, Download, Mail, Star, RefreshCw, Layers, Zap, Award } from 'lucide-react';
 
 // --- APP ASSET IMPORTS ---
-import iconCcna from '../images/Icon-ccna.png';
+import appIcon from '../images/icon.png';
 import screenshot1 from '../images/Screenshot_20260603-152235.png';
 import screenshot2 from '../images/Screenshot_20260603-152242.png';
 import screenshot3 from '../images/Screenshot_20260603-152250.png';
@@ -347,7 +347,7 @@ function Navbar() {
             boxShadow: '0 4px 12px rgba(13, 59, 140, 0.15)',
             border: '1px solid rgba(26, 111, 212, 0.15)'
           }}>
-            <img src={iconCcna} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} referrerPolicy="no-referrer" />
+            <img src={appIcon} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} referrerPolicy="no-referrer" />
           </div>
           <span style={{ fontSize: '20px', fontWeight: 800, color: '#0D3B8C', letterSpacing: '-0.5px' }}>
             CCNA <span style={{ color: '#1A6FD4' }}>Zero2Hero</span>
@@ -2427,18 +2427,28 @@ function DownloadSection() {
 
         {/* Buttons */}
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '48px' }}>
-          <button className="btn btn-black btn-scale" style={{ display: 'inline-flex', gap: '8px', padding: '14px 28px' }}>
-            <span>🎮</span>
+          <button 
+            className="btn btn-black" 
+            style={{ display: 'inline-flex', gap: '12px', padding: '14px 28px', opacity: 0.8, cursor: 'not-allowed', alignItems: 'center' }}
+            disabled
+            title="Play Store link is being updated! Please check back later."
+          >
+            <span style={{ fontSize: '24px' }}>🤖</span>
             <div style={{ textAlign: 'left' }}>
-              <div style={{ fontSize: '10px', textTransform: 'uppercase', opacity: 0.7, lineHeight: 1 }}>Download on</div>
-              <div style={{ fontSize: '15px', fontWeight: 700 }}>Google Play</div>
+              <div style={{ fontSize: '10px', textTransform: 'uppercase', opacity: 0.7, lineHeight: 1 }}>COMING SOON ON</div>
+              <div style={{ fontSize: '16px', fontWeight: 700, lineHeight: 1.2 }}>Google Play</div>
             </div>
           </button>
-          <button className="btn btn-black btn-scale" style={{ display: 'inline-flex', gap: '8px', padding: '14px 28px' }}>
-            <span>🍎</span>
+          <button 
+            className="btn btn-black" 
+            style={{ display: 'inline-flex', gap: '12px', padding: '14px 28px', opacity: 0.5, cursor: 'not-allowed', alignItems: 'center' }}
+            disabled
+            title="iOS version coming soon!"
+          >
+            <span style={{ fontSize: '24px' }}>🍎</span>
             <div style={{ textAlign: 'left' }}>
-              <div style={{ fontSize: '10px', textTransform: 'uppercase', opacity: 0.7, lineHeight: 1 }}>Download on the</div>
-              <div style={{ fontSize: '15px', fontWeight: 700 }}>App Store</div>
+              <div style={{ fontSize: '10px', textTransform: 'uppercase', opacity: 0.7, lineHeight: 1 }}>COMING SOON ON</div>
+              <div style={{ fontSize: '16px', fontWeight: 700, lineHeight: 1.2 }}>App Store</div>
             </div>
           </button>
         </div>
@@ -2749,7 +2759,7 @@ function Footer() {
                 justifyContent: 'center',
                 border: '1px solid rgba(255, 255, 255, 0.15)'
               }}>
-                <img src={iconCcna} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} referrerPolicy="no-referrer" />
+                <img src={appIcon} alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} referrerPolicy="no-referrer" />
               </div>
               <span style={{ fontSize: '18px', fontWeight: 800, color: '#FFFFFF' }}>CCNA <span style={{ color: '#1A6FD4' }}>Zero2Hero</span></span>
             </div>
